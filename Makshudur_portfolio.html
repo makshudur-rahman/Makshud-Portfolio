@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Makshudur Rahman — ETE graduate, researcher and engineer from RUET.">
+<title>Makshudur Rahman | Research & Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07111f;--panel:#0d1b2c;--panel2:#12243a;--txt:#eef5ff;--muted:#a4b5ca;--accent:#59e1c2;--accent2:#76a9ff;--line:rgba(255,255,255,.11);--glow:rgba(89,225,194,.2);--navbg:rgba(7,17,31,.86)}
+[data-theme=light]{--bg:#f4f7fb;--panel:#fff;--panel2:#eaf0f7;--txt:#14243a;--muted:#586b82;--accent:#007f69;--accent2:#2865c7;--line:rgba(15,35,60,.13);--glow:rgba(0,127,105,.12);--navbg:rgba(244,247,251,.88)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--txt);line-height:1.7;overflow-x:hidden;transition:background .3s,color .3s}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,91%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:var(--navbg);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font:800 1.45rem Manrope,sans-serif;white-space:nowrap}.brand b{color:var(--accent)}nav{display:flex;align-items:center;gap:clamp(9px,1.6vw,22px);font-size:.88rem;color:var(--muted)}nav a{padding:8px 10px;border-radius:9px;transition:.2s}nav a:hover,nav a.active{color:var(--accent);background:var(--glow)}.actions{display:flex;gap:8px}.iconbtn,.menubtn{border:1px solid var(--line);background:var(--panel);color:var(--txt);padding:9px 12px;border-radius:12px;cursor:pointer}.menubtn{display:none}
+.hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px;padding:75px 0}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}.hero h1{font:800 clamp(2.5rem,5.5vw,4.7rem)/1.08 Manrope,sans-serif;margin:18px 0}.hero h1 span{color:var(--accent)}.type-line{color:var(--accent2);font-weight:700;min-height:1.8em}.lead{font-size:1.08rem;color:var(--muted);max-width:660px}.pills{display:flex;flex-wrap:wrap;gap:9px;margin:23px 0}.pill{border:1px solid var(--line);padding:6px 12px;border-radius:100px;font-size:.82rem;color:var(--muted)}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border:1px solid var(--line);border-radius:11px;font-weight:700;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px var(--glow)}.btn.primary{background:var(--accent);color:#061a17;border-color:var(--accent)}.portrait-wrap{position:relative;width:min(390px,100%);margin:auto;padding:12px;border-radius:32px}.portrait-wrap:before{content:"";position:absolute;inset:0;border:5px solid color-mix(in srgb,var(--accent) 75%,var(--accent2));border-radius:32px;opacity:.95}.portrait-wrap:after{content:"";position:absolute;inset:-5px;border-radius:36px;border:6px dashed var(--accent2);animation:spin 24s linear infinite;pointer-events:none}.portrait-inner{position:relative;border-radius:24px;overflow:hidden;background:var(--panel);padding:4px}.portrait{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 25%;border-radius:23px;background:linear-gradient(145deg,var(--panel2),var(--panel));}.portrait-fallback{display:none;aspect-ratio:4/5;align-items:center;justify-content:center;font:800 5rem Manrope;color:var(--accent)}.photo-caption{position:absolute;bottom:22px;left:-24px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 17px;box-shadow:0 10px 35px var(--glow)}
+section{padding:82px 0}.section-head{margin-bottom:32px}.section-head h2{font:800 clamp(2rem,4vw,3rem)/1.15 Manrope;margin-top:8px}.desc{color:var(--muted);max-width:750px;margin-top:12px}.grid{display:grid;gap:19px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 35px rgba(0,0,0,.06);transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}.card h3{font-size:1.1rem;margin-bottom:8px}.card p,.card li{color:var(--muted)}.card .tag{display:inline-block;margin-top:13px;color:var(--accent);font-size:.8rem;background:var(--glow);padding:4px 9px;border-radius:7px}.timeline{border-left:2px solid var(--line);margin-left:8px;padding-left:24px;display:grid;gap:24px}.timeline-item{position:relative}.timeline-item:before{content:"";position:absolute;left:-31px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--glow)}.date{font-size:.83rem;font-weight:700;color:var(--accent)}.list{padding-left:18px;color:var(--muted);margin-top:8px}.resume-layout{display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:start}.resume-side{position:sticky;top:105px;background:var(--panel);border:1px solid var(--line);padding:16px;border-radius:16px;display:grid;gap:5px}.resume-side a{padding:9px 11px;border-radius:9px;color:var(--muted);font-size:.9rem}.resume-side a:hover,.resume-side a.active{background:var(--glow);color:var(--accent)}.resume-content section{padding:24px 0 42px;border-bottom:1px solid var(--line)}.resume-content section:first-child{padding-top:0}.resume-content h2{font:800 1.8rem Manrope;margin-bottom:18px}.pub-row{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid var(--line)}.pub-num{font:800 1.3rem Manrope;color:var(--accent)}.pub-title{font-weight:700}.meta{font-size:.9rem;color:var(--muted);margin-top:5px}.skill-group{margin-bottom:16px}.skill-group strong{display:block;color:var(--accent);margin-bottom:5px}.project-card .project-img{width:100%;height:180px;object-fit:cover;border-radius:12px;background:var(--panel2);margin-bottom:15px}.project-img.placeholder{display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:2rem}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px}.contact-link{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.contact-link .symbol{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:var(--glow);color:var(--accent);font-weight:800;flex-shrink:0}.contact-link small{display:block;color:var(--muted)}form{display:grid;gap:12px}input,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);color:var(--txt);font:inherit}textarea{min-height:145px;resize:vertical}.gallery-note{border:1px dashed var(--line);padding:22px;border-radius:14px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem}footer .foot{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.foot-links{display:flex;gap:15px;flex-wrap:wrap}.foot-links a:hover{color:var(--accent)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}@keyframes spin{to{transform:rotate(360deg)}}@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}.hero-copy>*{animation:fadeUp .75s both}.hero-copy>*:nth-child(2){animation-delay:.12s}.hero-copy>*:nth-child(3){animation-delay:.22s}.hero-copy>*:nth-child(4){animation-delay:.3s}.hero-copy>*:nth-child(5){animation-delay:.38s}.hero-copy>*:nth-child(6){animation-delay:.46s}
+.cursor-orb{position:fixed;top:0;left:0;width:18px;height:18px;border:1px solid var(--accent);border-radius:50%;background:color-mix(in srgb,var(--accent) 14%,transparent);pointer-events:none;z-index:1000;transform:translate(-50%,-50%);transition:width .18s,height .18s;mix-blend-mode:screen}.cursor-orb.hover{width:34px;height:34px}@media(pointer:coarse){.cursor-orb{display:none}}
+@media(max-width:940px){nav{gap:4px;font-size:.78rem}.nav{gap:10px}.resume-layout{grid-template-columns:180px 1fr}.three{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.nav{height:68px}.menubtn{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;padding:15px 5%;background:var(--panel);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}nav.open{display:flex}.hero{grid-template-columns:1fr;padding:48px 0;min-height:auto;gap:35px}.portrait-wrap{width:min(285px,80%)}.photo-caption{left:-12px}.two,.three,.contact-grid{grid-template-columns:1fr}.resume-layout{grid-template-columns:1fr}.resume-side{position:relative;top:auto;display:flex;overflow-x:auto}.resume-side a{white-space:nowrap}.resume-content section{scroll-margin-top:100px}section{padding:60px 0}.cursor-orb{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Focused requested updates: preserve existing site styling, add page navigation and subtle transition */
+body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}
+:root{--theme-toggle-bg:#343a43;--theme-toggle-fg:#f1f4f8}
+[data-theme="light"]{--theme-toggle-bg:#dfe3e8;--theme-toggle-fg:#202936}
+.iconbtn{background:var(--theme-toggle-bg)!important;color:var(--theme-toggle-fg)!important;border-color:var(--line)}
+.ruet-full{color:#d8b66a;font-weight:700;font-size:.95rem;margin-top:5px;letter-spacing:.02em}
+.page-section{display:none!important;padding-top:40px;padding-bottom:65px}
+.page-section.page-active{display:block!important}
+#home.page-section.page-active{display:grid!important}
+.page-section.page-active{animation:pageEnter .62s cubic-bezier(.2,.75,.25,1) both}
+@keyframes pageEnter{from{opacity:0;transform:translateY(18px);filter:blur(2px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+.portrait-wrap{isolation:isolate}
+.portrait-wrap:before{inset:-9px;border-radius:36px;background:conic-gradient(from 0deg,var(--accent) 0 18%,transparent 18% 35%,var(--accent2) 35% 55%,transparent 55% 75%,var(--accent) 75% 100%);animation:spin 24s linear infinite;z-index:-1}
+.portrait-inner{background:var(--panel);border:2px solid color-mix(in srgb,var(--accent) 45%,var(--line))}
+.research-tabs,.publication-filters{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}
+.research-tab,.pub-filter{border:1px solid var(--line);background:transparent;color:var(--muted);padding:9px 17px;border-radius:99px;cursor:pointer;font:inherit;font-size:.9rem}
+.research-tab.active,.pub-filter.active{border-color:var(--accent);color:var(--accent);background:var(--glow)}
+.research-panel{display:none;animation:pageEnter .4s ease both}.research-panel.active{display:block}
+.publication-stats{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+.publication-stats span{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 18px;color:var(--muted)}
+.publication-stats strong{display:block;color:var(--accent);font-size:1.4rem}
+.pub-showing{color:var(--muted);margin:12px 0}
+.pub-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:13px}
+.publication-table{border-collapse:collapse;width:100%;min-width:720px}
+.publication-table th{background:var(--panel2);text-align:left;padding:15px;color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+.publication-table td{padding:15px;border-top:1px solid var(--line);vertical-align:top;font-size:.91rem}
+.publication-table td:nth-child(2){color:var(--accent);font-weight:700}
+.publication-table small{display:inline-block;color:var(--muted);margin-top:4px}
+.publication-table a{color:var(--accent)}
+.pub-type{display:inline-block;padding:4px 10px;border-radius:99px;background:color-mix(in srgb,var(--accent2) 15%,transparent);color:var(--accent2);font-size:.78rem;font-weight:700}
+.icon-links a{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;transition:transform .2s,background .2s}
+.icon-links a:hover{transform:translateY(-3px);background:var(--glow)}
+.icon-links img{width:20px;height:20px}
+.brand-symbol img{width:20px;height:20px;display:block}
+.bangladesh-clock{font-size:.82rem;color:var(--accent2);font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:720px){.page-section{padding-top:25px}.page-section#home.page-active{display:grid!important}.bangladesh-clock{width:100%;text-align:center}}
+
+.research-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.research-tabs button{padding:10px 16px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--txt);font:inherit;cursor:pointer}.research-tabs button.active{background:var(--accent);color:#07111f;border-color:var(--accent)}.achievement-panel{display:none}.achievement-panel.active{display:block}.award-icon{font-size:2.3rem;margin-bottom:8px}.project-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-bottom:14px}.project-gallery-img{width:100%;height:75px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}.project-card .project-img{height:190px;object-fit:cover}.resume-options a{display:block}.resume-options a:hover{color:var(--accent)}.standalone-content section{padding:18px 0!important;border:0!important}.standalone-content{max-width:900px;margin:auto}.standalone-content h2{display:none}
+
+/* Resume overview follows the compact sidebar + content layout. */
+.resume-subpage-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:30px;align-items:start;margin-top:26px}
+.resume-subpage-layout .resume-side{position:sticky;top:100px}
+.resume-subpage-main{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px 30px;box-shadow:0 12px 35px rgba(0,0,0,.06)}
+.resume-subpage-main .section-head{margin-bottom:20px}
+.resume-subpage-main .section-head h2{display:none}
+.resume-subpage-main .section-head .desc{margin-top:0}
+.resume-subpage-main .standalone-content{max-width:none;margin:0}
+.resume-subpage-main .standalone-content section{padding:0!important;border:0!important}
+.resume-subpage-main .standalone-content h2{display:none}
+.resume-side a{display:block}
+@media(max-width:720px){.resume-subpage-layout{grid-template-columns:1fr}.resume-subpage-layout .resume-side{position:relative;top:auto;display:flex;overflow-x:auto}.resume-subpage-layout .resume-side a{white-space:nowrap}.resume-subpage-main{padding:20px}}
+.resume-main-layout{grid-template-columns:220px minmax(0,1fr);gap:30px;align-items:start;margin-top:26px}
+.resume-main-layout .resume-side{position:sticky;top:100px}
+.resume-main-content{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px 30px;box-shadow:0 12px 35px rgba(0,0,0,.06)}
+.resume-main-content section{padding:0!important;border:0!important}
+.resume-main-content h2{font:800 1.8rem Manrope;margin-bottom:18px}
+.resume-quick-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.resume-side a{transition:background .2s,color .2s,transform .2s}
+.resume-side a:hover{transform:translateX(3px)}
+/* Fixed portrait frame; only the segmented accent orbit rotates (video reference). */
+/* Modern rectangular segmented portrait frame */
+.portrait-wrap {
+    position: relative;
+    isolation: isolate;
+    width: min(390px, 100%);
+    margin: auto;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+/* Outer solid border */
+.portrait-wrap:before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border: 2px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    border-radius: 32px;
+    background: none;
+    animation: none;
+    z-index: -2;
+}
+
+/* Thick segmented rectangular frame */
+.portrait-wrap:after {
+    content: "";
+    position: absolute;
+    inset: -9px;
+    border: 6px dashed var(--accent);
+    border-radius: 32px;
+    background: none;
+    animation: none;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* Portrait container */
+.portrait-inner {
+    position: relative;
+    overflow: hidden;
+    padding: 3px;
+    border-radius: 22px;
+    background: var(--panel);
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+}
+
+/* Portrait image */
+.portrait {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 19px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 720px) {
+    .portrait-wrap {
+        width: min(285px, 80%);
+        padding: 10px;
+    }
+
+    .portrait-wrap:after {
+        inset: -8px;
+        border-width: 5px;
+        border-radius: 27px;
+    }
+}
+@keyframes orbitSegments{to{transform:rotate(360deg)}}
+@media(max-width:720px){.resume-main-layout{grid-template-columns:1fr}.resume-main-layout .resume-side{position:relative;top:auto;display:flex;overflow-x:auto}.resume-main-layout .resume-side a{white-space:nowrap}.resume-main-content{padding:20px}}
+
+
+/* Requested compact, persistent footer. Reserve page space so content remains visible above it. */
+body{padding-bottom:48px}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:80;padding:5px 0;background:var(--navbg);backdrop-filter:blur(16px);border-top:1px solid var(--line)}
+footer .foot{min-height:30px;gap:10px;flex-wrap:nowrap}
+footer .foot-links{gap:9px}
+footer .icon-links a{width:24px;height:24px}
+footer .icon-links img{width:16px;height:16px}
+footer .bangladesh-clock{font-size:.72rem}
+body.education-standalone header nav{display:none!important}
+body.education-standalone header .menubtn{display:none!important}
+@media(max-width:720px){
+  body{padding-bottom:68px}
+  footer{padding:5px 0}
+  footer .foot{min-height:52px;justify-content:center;gap:4px 10px;flex-wrap:wrap}
+  footer .foot>span:first-child{font-size:.74rem}
+  footer .bangladesh-clock{width:auto;font-size:.68rem}
+}
+
+
+.linkedin-mark {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #0A66C2 !important;
+    font: 800 23px/1 Arial, sans-serif;
+    letter-spacing: -2px;
+}
+.linkedin-footer-mark {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    color: #0A66C2;
+    font: 800 15px/1 Arial, sans-serif;
+    letter-spacing: -1.5px;
+}
+
+
+/* Animate the segmented frame accents around a stationary rectangular outline. */
+@property --frame-angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes moveFrameSegments {
+    from { --frame-angle: 0deg; }
+    to   { --frame-angle: 360deg; }
+}
+.resume-about-preview .timeline-item p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.75;
+    margin-bottom: 12px;
+}
+/* Fine-tune: bring the segmented frame closer to the portrait */
+.portrait-wrap {
+    padding: 4px !important;
+    border-radius: 24px;
+}
+
+.portrait-wrap:before {
+    content: none !important;
+}
+
+.portrait-wrap:after {
+    content: "";
+    position: absolute;
+    inset: -1px !important;
+    padding: 3px;
+    border: 0 !important;
+    border-radius: 24px !important;
+    background: conic-gradient(
+        from calc(-12deg + var(--frame-angle)),
+        var(--accent) 0deg 7deg,
+        transparent 7deg 13deg,
+        var(--accent) 13deg 23deg,
+        transparent 23deg 31deg,
+        var(--accent) 31deg 37deg,
+        transparent 37deg 48deg,
+        var(--accent) 48deg 57deg,
+        transparent 57deg 64deg,
+        var(--accent) 64deg 69deg,
+        transparent 69deg 82deg,
+        var(--accent) 82deg 91deg,
+        transparent 91deg 99deg,
+        var(--accent) 99deg 105deg,
+        transparent 105deg 119deg,
+        var(--accent) 119deg 128deg,
+        transparent 128deg 135deg,
+        var(--accent) 135deg 141deg,
+        transparent 141deg 153deg,
+        var(--accent) 153deg 162deg,
+        transparent 162deg 171deg,
+        var(--accent) 171deg 177deg,
+        transparent 177deg 190deg,
+        var(--accent) 190deg 199deg,
+        transparent 199deg 207deg,
+        var(--accent) 207deg 213deg,
+        transparent 213deg 226deg,
+        var(--accent) 226deg 235deg,
+        transparent 235deg 242deg,
+        var(--accent) 242deg 248deg,
+        transparent 248deg 260deg,
+        var(--accent) 260deg 270deg,
+        transparent 270deg 278deg,
+        var(--accent) 278deg 284deg,
+        transparent 284deg 297deg,
+        var(--accent) 297deg 306deg,
+        transparent 306deg 314deg,
+        var(--accent) 314deg 320deg,
+        transparent 320deg 333deg,
+        var(--accent) 333deg 342deg,
+        transparent 342deg 350deg,
+        var(--accent) 350deg 356deg,
+        transparent 356deg 360deg
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: moveFrameSegments 24s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 1;
+}
+
+.portrait-inner {
+    padding: 3px !important;
+    border-radius: 19px !important;
+}
+
+.portrait {
+    border-radius: 16px !important;
+}
+
+@media (max-width: 720px) {
+    .portrait-wrap {
+        padding: 4px !important;
+    }
+    .portrait-wrap:after {
+        inset: -4px !important;
+        padding: 4px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .portrait-wrap:after { animation: none !important; }
+}
+</style>
+</head>
+<body>
+<div class="cursor-orb" id="cursorOrb"></div>
+<header><div class="wrap nav">
+<a class="brand" href="#home">Makshudur<b>.</b></a>
+<nav id="nav"><a href="#home" class="active">Home</a><a href="#resume">Resume</a><a href="#education">Education</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a></nav>
+<div class="actions"><button class="iconbtn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">☼ / ☾</button><button class="menubtn" id="menuToggle" aria-label="Open menu">☰</button></div>
+</div></header>
+<main>
+<section class="wrap hero page-section" id="home">
+<div class="hero-copy">
+<div class="eyebrow">Graduate · Electronics and Telecommunication Engineering</div>
+<div class="ruet-full">Rajshahi University of Engineering &amp; Technology (RUET)</div>
+<h1>Hello, I’m<br><span>Makshudur Rahman</span></h1>
+<div class="type-line">Researcher · <span id="typed">Power Electronics</span><span aria-hidden="true">▍</span></div>
+<p class="lead">An engineering graduate and researcher interested in power electronics, grid-forming inverter control, renewable energy, intelligent control systems, metasurfaces and optical sensing.</p>
+
+<div class="buttons"><a class="btn" href="#research">Explore Research</a><a class="btn" href="#contact">Get in Touch</a><a class="btn primary" href="Makshudur_Rahman_CV.pdf" target="_blank">View CV ↗</a></div>
+</div>
+<div class="portrait-wrap"><div class="portrait-inner"><img class="portrait" src="assets/profile1.jpg" alt="Makshudur Rahman portrait" onerror="this.style.display='none';document.getElementById('portraitFallback').style.display='flex'"><div class="portrait-fallback" id="portraitFallback">MR</div>
+</section>
+<section id="resume" class="page-section"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Professional profile</div><h2>Resume</h2><p class="desc">Choose a section to explore my education, experience, skills, and other professional details.</p></div>
+<div class="resume-layout resume-main-layout">
+<aside class="resume-side" aria-label="Resume sections">
+<a href="#aboutme" class="active">About Me</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#achievements-activities">Extra Curriculars</a><a href="#research">Research Interests</a><a href="#gallery">Gallery</a>
+</aside>
+
+<div class="resume-content resume-main-content">
+  <section class="resume-about-preview">
+    <h2>About Me</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="date">ETE Graduate · RUET</div>
+        <h3>Makshudur Rahman</h3>
+
+        <p>
+          Makshudur Rahman was born on 7 December 2002 in Mymensingh,
+          Bangladesh, where he grew up. He is an Electronics and
+          Telecommunication Engineering graduate from Rajshahi University
+          of Engineering & Technology (RUET), Bangladesh, having completed
+          his undergraduate degree with a CGPA of 3.73 out of 4.00.
+        </p>
+
+        <p>
+          His academic foundation spans communication engineering, power
+          electronics, control systems, and computational methods. His
+          primary research focus is grid-forming inverter control and
+          power-system stability, with additional interests in
+          renewable-energy integration, intelligent control, metasurfaces,
+          nanophotonics, plasmonic absorbers, and optical sensing.
+        </p>
+
+        <p>
+          His research experience includes studies on disturbance-adaptive
+          control strategies for grid-forming inverters and
+          polarization-insensitive metasurface absorbers. He is experienced
+          in MATLAB/Simulink, programming, mathematical modeling, and
+          engineering simulation, and enjoys applying these skills to
+          challenging research and practical engineering problems.
+        </p>
+
+        <p>
+          Driven by intellectual curiosity and a commitment to
+          professional growth, Makshudur aspires to pursue impactful
+          research, collaborate across disciplines, and contribute to
+          innovative engineering solutions that address real-world
+          challenges.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="resume-quick-links"></div>
+  </section>
+</div>
+</div>
+</div>
+</section>
+
+<section id="education" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Educational Background</div><h2>Education</h2></div><div class="resume-content standalone-content"><section id="education-content"><h2>Education</h2><div class="timeline">
+<div class="timeline-item"><div class="date">2022 – 2026</div><h3>B.Sc. in Electronics & Telecommunication Engineering</h3><p>Rajshahi University of Engineering & Technology (RUET), Rajshahi, Bangladesh</p><p><strong>CGPA: 3.73 / 4.00 · Class position: 5th</strong></p></div>
+<div class="timeline-item"><div class="date">2018 – 2020</div><h3>Higher Secondary Certificate (HSC)</h3><p>Govt. Ananda Mohan College, Mymensingh</p><p><strong>GPA: 5.00 / 5.00</strong></p></div>
+<div class="timeline-item"><div class="date">2018</div><h3>Secondary School Certificate (SSC)</h3><p>Progressive Model School, Mymensingh</p><p><strong>GPA: 5.00 / 5.00 · Board Scholarship recipient</strong></p></div>
+<div class="timeline-item"><div class="date">2015</div><h3>Junior School Certificate (JSC)</h3><p>Progressive Model School, Mymensingh</p><p><strong>GPA: 5.00 / 5.00</strong></p></div>
+<div class="timeline-item"><div class="date">2012</div><h3>Primary School Certificate (PSC)</h3><p>Progressive Model School, Mymensingh</p><p><strong>GPA: 5.00 / 5.00</strong></p></div>
+</div></section></div></div></section>
+<section id="experience" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Experience</div><h2>Experience</h2></div><div class="resume-content standalone-content"><section id="experience-content"><h2>Experience</h2><div class="card"><div class="date">March 2025</div><h3>Industrial Trainee · Bangladesh Telecommunications Company Limited (BTCL)</h3><p>Industrial training exposure to telecommunications network infrastructure and operational systems.</p><ul class="list"><li>Outside Plant (OSP) and GPON networks</li><li>Optical fiber splicing and cable jointing</li><li>OTDR-based fiber loss measurement and fault troubleshooting</li><li>FTTH network operation and maintenance</li><li>Telecommunication billing system</li></ul></div></section></div></div></section>
+<section id="skills" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Skills</div><h2>Skills</h2></div><div class="resume-content standalone-content"><section id="skills-content"><h2>Skills</h2><div class="grid two">
+<div class="card skill-group"><strong>Programming</strong><p>C, C++, Python, JavaScript, MATLAB, SQL, Assembly 8086, LaTeX</p></div>
+<div class="card skill-group"><strong>Simulation & Engineering Software</strong><p>COMSOL Multiphysics, CST Studio Suite, DSCH, Microwind2, EMU-8086, eNSP, HOMER Pro, SCAPS-1D, OriginPro, Arduino IDE, AutoCAD, ExpressPCB</p></div>
+<div class="card skill-group"><strong>Web Technologies</strong><p>HTML5, CSS3, Node.js, Express.js, PHP, MySQL</p></div>
+<div class="card skill-group"><strong>Productivity & Tools</strong><p>Microsoft Office, Google Colab, VS Code, Code::Blocks, Adobe Illustrator</p></div>
+<div class="card skill-group"><strong>Professional Skills</strong><p>Technical presentation, public speaking, leadership, teamwork, event management, problem-solving, critical thinking, adaptability</p></div>
+<div class="card skill-group"><strong>Languages</strong><p>Bengali and English (full professional proficiency), Hindi</p></div>
+</div></section></div></div></section>
+<section id="activities" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Extra Curricular Activities</div><h2>Extra Curricular Activities</h2></div><div class="resume-content standalone-content"><section id="activities-content"><h2>Extra Curriculars</h2><div class="timeline">
+<div class="timeline-item"><div class="date">June 2022 – July 2024</div><h3>RUET Career Forum (RCF)</h3><p>General Member</p></div>
+<div class="timeline-item"><div class="date">December 2022</div><h3>ETECHNOVATION 2022</h3><p>Volunteer and Line Following Robot Car Race Participant</p></div>
+<div class="timeline-item"><div class="date">April 2024</div><h3>University Innovation Hub Program · Rajshahi Cohort 6</h3><p>Presented a Smart Healthcare and Home Medical Service Management concept.</p></div>
+<div class="timeline-item"><div class="date">April 2024</div><h3>9th RCF Career Fair 2024</h3><p>Career development workshops on CV writing, interviews, career planning and networking.</p></div>
+<div class="timeline-item"><div class="date">November 2022</div><h3>International Conference on Computer & Information Engineering (ICCIE 2022)</h3><p>Conference on computer science, information engineering, AI, communication and emerging technologies.</p></div>
+</div></section></div></div></section>
+<section id="aboutme" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">About Me</div><h2>About Me</h2></div><div class="resume-content standalone-content"><section id="aboutme-content"><h2>About Me</h2><div class="card"><p>I am Makshudur Rahman, an Electronics and Telecommunication Engineering graduate of Rajshahi University of Engineering & Technology (RUET), Bangladesh. My academic background combines communication engineering, power electronics, control systems, simulation, and computational methods.</p><p style="margin-top:12px">My primary research focus is grid-forming inverter control and power-system stability, with interests extending to renewable-energy integration, intelligent control, metasurfaces, nanophotonics, plasmonic absorbers, and optical sensing. I enjoy investigating complex engineering problems through modeling, simulation, analytical study, and practical implementation.</p><p style="margin-top:12px">My research and publication experience includes work on disturbance-adaptive control for grid-forming inverters and polarization-insensitive metasurface absorbers. I am motivated by continuous learning, meaningful research, collaboration, and translating engineering knowledge into practical contributions.</p></div></section></div></div></section>
+<section id="gallery" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Gallery</div><h2>Gallery</h2></div><div class="resume-content standalone-content"><section id="gallery-content"><h2>Gallery</h2><div class="gallery-note">Gallery images are not included yet. Makshud is working on this page.</div><div class="grid three" style="margin-top:16px"><div class="card"><div class="project-img placeholder">＋</div><p>Academic / Graduation</p></div><div class="card"><div class="project-img placeholder">＋</div><p>Research / Laboratory</p></div><div class="card"><div class="project-img placeholder">＋</div><p>Events / Activities</p></div></div></section></div></div></section><section id="resume-projects" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Projects</div><h2>Projects</h2></div><div class="grid two"><a class="card" href="#projects"><h3>Selected Projects</h3><p>Open detailed project showcase.</p></a></div></div></section><section id="resume-research" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Research Interests</div><h2>Research Interests</h2></div><div class="grid two"><a class="card" href="#research"><h3>Research & Publications</h3><p>Open research profile and publications.</p></a></div></div></section><section id="research" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Research & publications</div><h2>Research that moves ideas forward.</h2><p class="desc">Explore my research interests and selected publications.</p></div>
+<div class="research-tabs" role="tablist"><button class="research-tab active" data-research-tab="interests">Research Interests</button><button class="research-tab" data-research-tab="pubs">Publications</button></div>
+<div class="research-panel active" id="researchInterests"><div class="grid three">
+<article class="card"><h3>Power Electronics & Grid-Forming Inverters</h3><p>Inverter control, virtual synchronous generator methods, transient stability, weak-grid operation, and disturbance-adaptive control.</p><span class="tag">Power Systems</span></article>
+<article class="card"><h3>Renewable Energy & Intelligent Control</h3><p>Renewable integration, system dynamics, power conversion, and intelligent/adaptive control approaches.</p><span class="tag">Control & Energy</span></article>
+<article class="card"><h3>Metasurfaces & Optical Sensing</h3><p>Metasurface absorbers, nanophotonics, plasmonic structures, and optical sensing concepts.</p><span class="tag">Photonics</span></article></div>
+<div class="grid two" style="margin-top:20px"><div class="card"><h3>Research in progress</h3><p>Modified Virtual Synchronous Generator (MOD-VSG) control for transient stabilization of grid-forming inverters under variable grid strength.</p></div><div class="card"><h3>Research focus</h3><p>Power electronics, grid-forming inverter control, renewable energy, intelligent control systems, metasurfaces, nanophotonics, and optical sensing.</p></div></div></div>
+<div class="research-panel" id="researchPublications">
+<div class="publication-stats"><span><strong>2</strong> Publications</span><span><strong>0</strong> Journals</span><span><strong>2</strong> Conferences</span><span><strong>0</strong> Book Chapters</span></div>
+<div class="publication-filters"><button class="pub-filter active" data-pub-filter="all">All (2)</button><button class="pub-filter" data-pub-filter="journal">Journal (0)</button><button class="pub-filter" data-pub-filter="conference">Conference (2)</button><button class="pub-filter" data-pub-filter="chapter">Book Chapter (0)</button></div>
+<p class="pub-showing">Showing <strong id="pubCount">2</strong> publications</p>
+<div class="pub-table-wrap"><table class="publication-table"><thead><tr><th>#</th><th>Year</th><th>Title</th><th>Publisher</th><th>Type</th></tr></thead><tbody>
+<tr data-publication-type="conference"><td>1</td><td>2026</td><td><b>Disturbance-Adaptive Nonlinear Damping Control for Transient Stabilization of Grid-Forming Inverters Under Variable Grid Strength</b><br><small>Makshudur Rahman · Md. Kamal Hosain · Nazmul Islam Nahin</small><br><small>PEEIACON 2026</small></td><td>IEEE</td><td><span class="pub-type conference">Conference</span></td></tr>
+<tr data-publication-type="conference"><td>2</td><td>2025</td><td><b>Polarization Insensitive Metasurfaces Absorber for Visible Wavelengths</b><br><small>28th International Conference on Computer and Information Technology (ICCIT)</small><br><a href="https://ieeexplore.ieee.org/document/11491689" target="_blank" rel="noreferrer">DOI: 10.1109/ICCIT68739.2025.11491689</a></td><td>IEEE</td><td><span class="pub-type conference">Conference</span></td></tr>
+</tbody></table></div></div>
+</div></section>
+<section id="projects" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Selected engineering work</div><h2>Projects</h2><p class="desc">Research, software, communication systems, embedded hardware, and simulation projects.</p></div>
+<div class="grid three">
+
+<article class="card project-card"><img class="project-img" src="assets/guest-house-home.png" alt="Smart Guest House Management" loading="lazy"><div class="project-gallery"><img class="project-gallery-img" src="assets/guest-house-home.png" alt="Smart Guest House Management project image" loading="lazy"><img class="project-gallery-img" src="assets/guest-house-booking.png" alt="Smart Guest House Management project image" loading="lazy"><img class="project-gallery-img" src="assets/guest-house-admin-rooms.png" alt="Smart Guest House Management project image" loading="lazy"><img class="project-gallery-img" src="assets/guest-house-dashboard.png" alt="Smart Guest House Management project image" loading="lazy"><img class="project-gallery-img" src="assets/guest-house-payment-success.png" alt="Smart Guest House Management project image" loading="lazy"><img class="project-gallery-img" src="assets/guest-house-payment.png" alt="Smart Guest House Management project image" loading="lazy"><img class="project-gallery-img" src="assets/guest-house-add-room.png" alt="Smart Guest House Management project image" loading="lazy"><img class="project-gallery-img" src="assets/guest-house-login.png" alt="Smart Guest House Management project image" loading="lazy"></div><h3>Smart Guest House Management</h3><p>Full-stack booking and management platform with authentication, Stripe payment integration, and admin dashboard.</p><span class="tag">Web Development</span></article>
+<article class="card project-card"><img class="project-img" src="assets/robot-front.jpg" alt="Autonomous Robot Car" loading="lazy"><div class="project-gallery"><img class="project-gallery-img" src="assets/robot-front.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-side-1.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-side-2.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-front-electronics.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-top-view.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-pcb-back.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-assembly.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-circuit-diagram.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-pcb-design-1.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-pcb-design-2.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-pcb-front.jpg" alt="Autonomous Robot Car project image" loading="lazy"><img class="project-gallery-img" src="assets/robot-pcb-back-detail.jpg" alt="Autonomous Robot Car project image" loading="lazy"></div><h3>Autonomous Robot Car</h3><p>Arduino robot with object-following and obstacle avoidance, plus Wi-Fi, voice and Bluetooth control.</p><span class="tag">Arduino · Robotics</span></article>
+<article class="card project-card">
+    <img class="project-img" src="assets/PF1.png" alt="Personal Portfolio Platform" loading="lazy">
+    <div class="project-gallery">
+        <img class="project-gallery-img" src="assets/PF2.png" alt="Portfolio screenshot 2" loading="lazy">
+        <img class="project-gallery-img" src="assets/PF3.png" alt="Portfolio screenshot 3" loading="lazy">
+        <img class="project-gallery-img" src="assets/PF4.png" alt="Portfolio screenshot 4" loading="lazy">
+        <img class="project-gallery-img" src="assets/PF5.png" alt="Portfolio screenshot 5" loading="lazy">
+        <img class="project-gallery-img" src="assets/PF6.png" alt="Portfolio screenshot 6" loading="lazy">
+        <img class="project-gallery-img" src="assets/PF7.png" alt="Portfolio screenshot 7" loading="lazy">
+    </div>
+    <h3>Personal Portfolio Platform</h3>
+    <p>Responsive portfolio platform using HTML, CSS, JavaScript, PHP and MySQL.</p>
+    <span class="tag">Full Stack</span>
+</article>
+<article class="card project-card"><img class="project-img" src="assets/radar-processing.jpg" alt="Pulse radar signal processing results" loading="lazy"><div class="project-gallery"><img class="project-gallery-img" src="assets/radar-simulink-model.jpg" alt="Pulse radar MATLAB Simulink model" loading="lazy"></div><h3>Pulse Radar System</h3><p>MATLAB/Simulink pulse radar for multi-target detection, range and velocity estimation using range-Doppler analysis.</p><span class="tag">Radar · MATLAB</span></article>
+<article class="card project-card"><img class="project-img" src="assets/line-following-robot.jpg" alt="Line following robot prototype" loading="lazy"><div class="project-gallery"><img class="project-gallery-img" src="assets/line-following-event.jpg" alt="Line following robot competition event" loading="lazy"></div><h3>Line Following Robot</h3><p>Arduino-based line-following robot developed for ETECHNOVATION.</p><span class="tag">Embedded Systems</span></article>
+<article class="card project-card"><img class="project-img" src="assets/fiber-mesh-structure.jpg" alt="Optical fiber mesh structure" loading="lazy"><div class="project-gallery"><img class="project-gallery-img" src="assets/fiber-te-mode.jpg" alt="TE polarization mode" loading="lazy"><img class="project-gallery-img" src="assets/fiber-tm-mode.jpg" alt="TM polarization mode" loading="lazy"></div><h3>Optical Fiber Dispersion Analysis</h3><p>MATLAB and COMSOL simulation of chromatic dispersion, attenuation, and birefringence in optical fibers.</p><span class="tag">Optical Communication</span></article>
+<article class="card project-card">
+    <img class="project-img"
+         src="assets/microstrip-antenna-top.jpg"
+         alt="Top view of microstrip patch antenna"
+         loading="lazy">
+
+    <div class="project-gallery">
+        <img class="project-gallery-img"
+             src="assets/antenna-directivity.jpg"
+             alt="3D directivity pattern of the microstrip patch antenna"
+             loading="lazy">
+
+        <img class="project-gallery-img"
+             src="assets/antenna-e-field.jpg"
+             alt="Antenna electric field distribution"
+             loading="lazy">
+
+        <img class="project-gallery-img"
+             src="assets/microstrip-antenna-3d.jpg"
+             alt="3D microstrip patch antenna model"
+             loading="lazy">
+    </div>
+
+    <h3>2.4 GHz Microstrip Patch Antenna</h3>
+    <p>CST design and simulation, including S11, VSWR, gain, directivity, radiation pattern, and efficiency.</p>
+    <span class="tag">CST Studio</span>
+</article>
+<article class="card project-card"><img class="project-img" src="assets/perovskite-device-structure.jpg" alt="Perovskite solar cell device structure" loading="lazy"><h3>Perovskite Solar Cell Optimization</h3><p>SCAPS-1D modeling and optimization of tin-based perovskite solar-cell parameters.</p><span class="tag">SCAPS-1D</span></article>
+
+<article class="card project-card"><img class="project-img" src="assets/power-converter-platform.jpg" alt="Power conversion experimental test platform" loading="lazy"><div class="project-gallery"><img class="project-gallery-img" src="assets/power-converter-circuit.jpg" alt="Power converter experimental circuit" loading="lazy"><img class="project-gallery-img" src="assets/cycloconverter-waveform.jpg" alt="Cycloconverter output waveform" loading="lazy"></div><h3>SCR-Based Power Conversion</h3><p>Experimental analysis of SCR rectifiers, AC voltage controllers, and cycloconverters using firing-angle and Arduino control.</p><span class="tag">Power Electronics</span></article>
+<article class="card project-card"><div class="project-img placeholder">⚙</div><h3>Power-System Network Analysis</h3><p>MATLAB algorithms for Y-bus construction, Kron reduction, Gauss-Seidel/Newton-Raphson power flow and symmetrical components.</p><span class="tag">Power Systems</span></article>
+<article class="card project-card"><div class="project-img placeholder">🛰</div><h3>Wireless Communication Modeling</h3><p>MATLAB models for wireless propagation, fading, equalization, multiple access, cellular handoff and OFDM.</p><span class="tag">4G/5G · OFDM</span></article>
+
+
+</div></div></section>
+<section id="achievements" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Recognition & participation</div><h2>Achievements & Activities</h2></div>
+<div class="research-tabs" role="tablist"><button class="achievement-tab active" data-achievement-tab="awards">🏅 Achievements</button><button class="achievement-tab" data-achievement-tab="activity">Activities</button></div>
+<div class="achievement-panel active" id="achievementAwards"><div class="grid two">
+<div class="card"><div class="award-icon">🏅</div><div class="date">Academic recognition</div><h3>SSC Board Scholarship</h3><p>Board Scholarship recipient for academic performance.</p></div>
+<div class="card"><div class="award-icon">🥇</div><div class="date">Academic achievement</div><h3>RUET ETE Academic Performance</h3><p>B.Sc. Engineering in Electronics & Telecommunication Engineering, RUET — CGPA 3.73/4.00.</p></div>
+<div class="card"><div class="award-icon">🏆</div><div class="date">Innovation & entrepreneurship</div><h3>University Innovation Hub Program — Rajshahi Cohort 6</h3><p>Selected with a Smart Healthcare and Home Medical Service Management concept.</p></div>
+</div></div>
+<div class="achievement-panel" id="achievementActivity"><div class="timeline">
+<div class="timeline-item"><div class="date">June 2022 – July 2024</div><h3>RUET Career Forum (RCF)</h3><p>General Member</p></div>
+<div class="timeline-item"><div class="date">December 2022</div><h3>ETECHNOVATION 2022</h3><p>Volunteer and Line Following Robot Car Race Participant</p></div>
+<div class="timeline-item"><div class="date">April 2024</div><h3>University Innovation Hub Program · Rajshahi Cohort 6</h3><p>Presented a Smart Healthcare and Home Medical Service Management concept.</p></div>
+<div class="timeline-item"><div class="date">April 2024</div><h3>9th RCF Career Fair 2024</h3><p>Career development workshops on CV writing, interviews, career planning and networking.</p></div>
+<div class="timeline-item"><div class="date">November 2022</div><h3>International Conference on Computer &amp; Information Engineering (ICCIE 2022)</h3><p>Conference on computer science, information engineering, AI, communication and emerging technologies.</p></div>
+</div></div>
+</div></section>
+<section id="contact" class="page-section"><div class="wrap"><div class="section-head"><div class="eyebrow">Let’s connect</div><h2>Contact Me</h2><p class="desc">For research collaboration, academic opportunities, engineering projects, or professional discussions, feel free to contact me.</p></div>
+<div class="contact-grid"><div class="card"><h3>Contact details</h3>
+<a class="contact-link" href="mailto:makshud0712@gmail.com"><span class="symbol brand-symbol"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt=""></span><span><small>Email</small>makshud0712@gmail.com</span></a>
+<a class="contact-link" href="tel:+8801703044774"><span class="symbol">☎</span><span><small>Phone</small>+880 1703044774</span></a>
+<a class="contact-link" href="https://www.linkedin.com/in/makshudur-rahman-287a23280/" target="_blank"><span class="symbol linkedin-mark" aria-label="LinkedIn">in</span><span><small>LinkedIn</small>Makshudur Rahman</span></a>
+<a class="contact-link" href="https://scholar.google.com/citations?user=K68SSoYAAAAJ&hl=id&authuser=4" target="_blank"><span class="symbol brand-symbol"><img src="https://cdn.simpleicons.org/googlescholar/4285F4" alt=""></span><span><small>Google Scholar</small>Research publications</span></a>
+<a class="contact-link" href="https://www.facebook.com/share/1DrH5aW5gU/?mibextid=wwXIfr" target="_blank"><span class="symbol brand-symbol"><img src="https://cdn.simpleicons.org/facebook/0866FF" alt=""></span><span><small>Facebook</small>Facebook profile</span></a>
+<a class="contact-link" href="https://wa.me/8801703044774" target="_blank"><span class="symbol brand-symbol"><img src="https://cdn.simpleicons.org/whatsapp/25D366" alt=""></span><span><small>WhatsApp</small>Message me</span></a>
+<a class="contact-link" href="https://maps.app.goo.gl/rAoVuVTkMJWq5opZ9?g_st=ic" target="_blank"><span class="symbol">⌖</span><span><small>Location</small>2/2 Corporation Street, Mymensingh</span></a></div>
+<div class="card"><h3>Send me a message</h3><p style="color:var(--muted);margin-bottom:15px">This form opens your email application with the message prepared.</p><form id="contactForm"><input id="senderName" placeholder="Your name" required><input id="senderEmail" type="email" placeholder="Your email" required><textarea id="senderMessage" placeholder="Write your message..." required></textarea><button class="btn primary" type="submit">Send Message ↗</button></form></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>Developed by <strong>Makshudur Rahman</strong> · © 2025</span>
+<div class="foot-links icon-links">
+<a title="Google Scholar" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=K68SSoYAAAAJ&amp;hl=id&amp;authuser=4" target="_blank"><img src="https://cdn.simpleicons.org/googlescholar/4285F4" alt="Google Scholar"></a>
+<a title="LinkedIn" aria-label="LinkedIn" href="https://www.linkedin.com/in/makshudur-rahman-287a23280/" target="_blank"><span class="linkedin-footer-mark" aria-hidden="true">in</span></a>
+<a title="Email" aria-label="Email" href="mailto:makshud0712@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email"></a>
+<a title="Facebook" aria-label="Facebook" href="https://www.facebook.com/share/1DrH5aW5gU/?mibextid=wwXIfr" target="_blank"><img src="https://cdn.simpleicons.org/facebook/0866FF" alt="Facebook"></a>
+<a title="WhatsApp" aria-label="WhatsApp" href="https://wa.me/8801703044774" target="_blank"><img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp"></a></div><span class="bangladesh-clock" id="bangladeshClock">Bangladesh time</span></div></footer>
+<script>
+const root=document.documentElement,themeBtn=document.getElementById('themeToggle'),nav=document.getElementById('nav');
+// Keep the Resume navigation on the left for every Resume subsection.
+(function buildResumeSubpageLayouts(){
+ const menu=document.querySelector('.resume-side'); if(!menu)return;
+ const ids=['experience','skills','activities','aboutme','gallery','resume-projects','resume-research'];
+ ids.forEach(id=>{const page=document.getElementById(id);if(!page)return;const wrap=page.querySelector(':scope > .wrap');if(!wrap||wrap.classList.contains('resume-subpage-layout'))return;
+  const sidebar=menu.cloneNode(true); sidebar.querySelectorAll('a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));
+  const main=document.createElement('div');main.className='resume-subpage-main';
+  const children=[...wrap.children];children.forEach(ch=>main.appendChild(ch));
+  wrap.classList.add('resume-subpage-layout');wrap.appendChild(sidebar);wrap.appendChild(main);
+ });
+})();
+
+const saved=localStorage.getItem('portfolio-theme');if(saved)root.setAttribute('data-theme',saved);
+themeBtn.addEventListener('click',()=>{const next=root.getAttribute('data-theme')==='light'?'dark':'light';root.setAttribute('data-theme',next);localStorage.setItem('portfolio-theme',next)});
+document.getElementById('menuToggle').addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year')?.textContent;
+const pageIds=['home','resume','education','experience','skills','activities','aboutme','gallery','resume-projects','resume-research','research','projects','achievements','contact'];
+const pageByHash={home:'home',resume:'resume',education:'education',experience:'experience',skills:'skills',activities:'activities',aboutme:'aboutme',gallery:'gallery','resume-projects':'resume-projects','resume-research':'resume-research',research:'research',projects:'projects',achievements:'achievements','achievements-activities':'achievements',contact:'contact'};
+function activatePage(id,subAnchor=null){
+ const page=pageByHash[id]||'home';
+ document.querySelectorAll('main>.page-section').forEach(el=>{el.classList.remove('page-active');});
+ const target=document.getElementById(page);if(target){target.classList.add('page-active');target.style.animation='none';void target.offsetWidth;target.style.animation='';}
+ if(id==='achievements-activities'){
+  document.querySelectorAll('[data-achievement-tab]').forEach(b=>b.classList.toggle('active',b.dataset.achievementTab==='activity'));
+  document.querySelectorAll('.achievement-panel').forEach(p=>p.classList.toggle('active',p.id==='achievementActivity'));
+ }
+ nav.querySelectorAll('a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+(id==='education'?'education':(['experience','skills','activities','aboutme','gallery','resume-projects','resume-research'].includes(id)?'resume':page))));
+ history.replaceState(null,'','#'+(subAnchor||id));
+ window.scrollTo({top:0,behavior:'smooth'});
+ if(subAnchor){setTimeout(()=>document.getElementById(subAnchor)?.scrollIntoView({behavior:'smooth',block:'start'}),300);}
+ document.querySelectorAll('.card,.section-head,.timeline-item').forEach(el=>{el.classList.remove('visible');});observeReveals();
+}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+ const raw=a.getAttribute('href').slice(1);if(!raw)return;
+ if(pageByHash[raw]){e.preventDefault();activatePage(raw,null);}
+}));
+function loadFromHash(){const h=location.hash.slice(1);if(h&&pageByHash[h])activatePage(h,null);else activatePage('home');}
+window.addEventListener('popstate',loadFromHash);
+loadFromHash();
+const revealObs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target)}}),{threshold:.12});
+function observeReveals(){document.querySelectorAll('.page-active .card,.page-active .section-head,.page-active .timeline-item').forEach(el=>{el.classList.add('reveal');revealObs.observe(el)});}
+observeReveals();
+const words=['Power Electronics','Grid-Forming Inverters','Renewable Energy','Intelligent Control','Metasurfaces & Optical Sensing'];let wi=0,ci=0,del=false;
+function type(){const el=document.getElementById('typed');if(!el)return;const word=words[wi];el.textContent=word.slice(0,ci);if(!del&&ci<word.length)ci++;else if(del&&ci>0)ci--;else if(!del){del=true;setTimeout(type,1200);return}else{del=false;wi=(wi+1)%words.length}setTimeout(type,del?45:85)}type();
+const orb=document.getElementById('cursorOrb');document.addEventListener('mousemove',e=>{if(orb){orb.style.left=e.clientX+'px';orb.style.top=e.clientY+'px'}});document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('mouseenter',()=>orb?.classList.add('hover'));el.addEventListener('mouseleave',()=>orb?.classList.remove('hover'))});
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('senderName').value,email=document.getElementById('senderEmail').value,msg=document.getElementById('senderMessage').value;const body=`Name: ${name}\nEmail: ${email}\n\n${msg}`;window.location.href=`mailto:makshud0712@gmail.com?subject=${encodeURIComponent('Portfolio Contact')}&body=${encodeURIComponent(body)}`});
+document.querySelectorAll('[data-achievement-tab]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-achievement-tab]').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.achievement-panel').forEach(p=>p.classList.toggle('active',p.id===(btn.dataset.achievementTab==='activity'?'achievementActivity':'achievementAwards')));}));
+document.querySelectorAll('[data-research-tab]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-research-tab]').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.research-panel').forEach(p=>p.classList.toggle('active',p.id===(btn.dataset.researchTab==='pubs'?'researchPublications':'researchInterests')));}));
+document.querySelectorAll('[data-pub-filter]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-pub-filter]').forEach(b=>b.classList.toggle('active',b===btn));const filter=btn.dataset.pubFilter;let shown=0;document.querySelectorAll('[data-publication-type]').forEach(row=>{const show=filter==='all'||row.dataset.publicationType===filter;row.style.display=show?'':'none';if(show)shown++;});document.getElementById('pubCount').textContent=shown;}));
+function updateBangladeshClock(){const el=document.getElementById('bangladeshClock');if(!el)return;el.textContent=new Intl.DateTimeFormat('en-BD',{timeZone:'Asia/Dhaka',weekday:'short',day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true}).format(new Date())+' · Bangladesh';}
+updateBangladeshClock();setInterval(updateBangladeshClock,1000);
+</script>
+
+<script>
+(function () {
+    const portrait = document.querySelector('.portrait');
+    if (!portrait) return;
+
+    const profileImages = Array.from(
+        { length: 9 },
+        (_, index) => `assets/profile${index + 1}.jpg`
+    );
+
+    // Preload the seven profile images to make transitions smooth.
+    profileImages.forEach(src => {
+        const image = new Image();
+        image.src = src;
+    });
+
+    let currentImage = 0;
+    portrait.style.transition = 'opacity 0.45s ease';
+
+    setInterval(() => {
+        currentImage = (currentImage + 1) % profileImages.length;
+        portrait.style.opacity = '0';
+
+        setTimeout(() => {
+            portrait.src = profileImages[currentImage];
+            portrait.onload = () => {
+                portrait.style.opacity = '1';
+            };
+        }, 450);
+    }, 3000);
+})();
+</script>
+
+</body></html>
